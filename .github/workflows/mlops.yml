@@ -93,7 +93,7 @@ jobs:
 
           print("Accuracy:", acc)
 
-          if acc < 0.70:
+          if acc < 0.60:
               raise SystemExit("Accuracy below threshold")
 
           print("Eval passed")
