@@ -80,6 +80,11 @@ jobs:
           print("Uploaded model")
           EOF
 
+      - name: Upload metrics artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics
+          path: outputs/metrics.json
 
   eval:
     needs: train
